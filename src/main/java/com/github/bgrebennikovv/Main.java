@@ -120,7 +120,7 @@ public class Main {
         int iceCreamGr = 100;
         int egg = 70;
 
-        int breakfastWeightGr = (bananaGr * 5) + (milkGr * 10) + (iceCreamGr * 2) + (iceCreamGr*2) + (egg * 4);
+        int breakfastWeightGr = (bananaGr * 5) + (milkGr * 10) + (iceCreamGr * 2) + (iceCreamGr * 2) + (egg * 4);
         float breakfastWeightKg = (float) breakfastWeightGr / 1000;
 
         System.out.printf("""
@@ -140,6 +140,33 @@ public class Main {
                 bananaGr, milkGr, iceCreamGr, egg,
                 breakfastWeightGr, breakfastWeightKg
         );
+
+        System.out.println("\nTask 7\n");
+
+        int weightToLose = 7000;
+
+        int lossPerDayMin = 250;
+        int lossPerDayMax = 500;
+
+        int daysMin = weightToLose / lossPerDayMin;
+        int daysMax = weightToLose / lossPerDayMax;
+        int averageDays = (daysMin + daysMax) / 2;
+
+        System.out.printf("""
+                        При необходимости сбросить: %s кг.
+                        
+                        Срок похудения при сбросе %s гр/день: %s дней
+                        Срок похудения при сбросе %s гр/день: %s дней
+                        
+                        В среднем потребуется %s день чтобы добиться результата
+                        """,
+                (weightToLose / 1000),
+                lossPerDayMin, daysMin,
+                lossPerDayMax, daysMax,
+                averageDays
+        );
+
+
 
     }
 }
