@@ -52,8 +52,8 @@ public class Main {
         byte studentsAnna = 27;
         byte studentsEkaterina = 30;
 
-        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
-        int sheetsPerStudent = 480 / totalStudents;
+        short totalStudents = (short) (studentsLudmila + studentsAnna + studentsEkaterina);
+        short sheetsPerStudent = (short) (480 / totalStudents);
 
         System.out.printf("""
                 *Количество учеников*
@@ -100,10 +100,10 @@ public class Main {
 
         System.out.println("Task 5\n");
 
-        short numberOfClasses = 120 / 6;
+        byte numberOfClasses = 120 / 6;
 
-        short whitePaint = (short) (2 * numberOfClasses);
-        short blownPaint = (short) (4 * numberOfClasses);
+        byte whitePaint = (byte) (2 * numberOfClasses);
+        byte blownPaint = (byte) (4 * numberOfClasses);
 
         System.out.printf("""
                         В школе, где %s классов, нужно %s банок белой краски и %s банок коричневой краски
@@ -115,12 +115,12 @@ public class Main {
 
         System.out.println("\nTask 6\n");
 
-        int bananaGr = 80;
-        int milkGr = 105;
-        int iceCreamGr = 100;
-        int egg = 70;
+        short bananaGr = 80;
+        short milkGr = 105;
+        short iceCreamGr = 100;
+        short egg = 70;
 
-        int breakfastWeightGr = (bananaGr * 5) + (milkGr * 10) + (iceCreamGr * 2) + (iceCreamGr * 2) + (egg * 4);
+        short breakfastWeightGr = (short) ((bananaGr * 5) + (milkGr * 10) + (iceCreamGr * 2) + (iceCreamGr * 2) + (egg * 4));
         float breakfastWeightKg = (float) breakfastWeightGr / 1000;
 
         System.out.printf("""
@@ -145,12 +145,12 @@ public class Main {
 
         int weightToLose = 7000;
 
-        int lossPerDayMin = 250;
-        int lossPerDayMax = 500;
+        short lossPerDayMin = 250;
+        short lossPerDayMax = 500;
 
-        int daysMin = weightToLose / lossPerDayMin;
-        int daysMax = weightToLose / lossPerDayMax;
-        int averageDays = (daysMin + daysMax) / 2;
+        short daysMin = (short) (weightToLose / lossPerDayMin);
+        short daysMax = (short) (weightToLose / lossPerDayMax);
+        short averageDays = (short) ((daysMin + daysMax) / 2);
 
         System.out.printf("""
                         При необходимости сбросить: %s кг.
