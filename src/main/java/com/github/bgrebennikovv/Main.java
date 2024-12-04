@@ -98,5 +98,20 @@ public class Main {
                 productionCapacityPerMonth
         );
 
+        System.out.println("Task 5\n");
+
+        short numberOfClasses = 120 / 6;
+
+        short whitePaint = (short) (2 * numberOfClasses);
+        short blownPaint = (short) (4 * numberOfClasses);
+
+        System.out.printf("""
+                        В школе, где %s классов, нужно %s банок белой краски и %s банок коричневой краски
+                        """,
+                numberOfClasses,
+                whitePaint,
+                blownPaint
+        );
+
     }
 }
