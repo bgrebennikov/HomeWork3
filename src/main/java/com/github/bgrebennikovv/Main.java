@@ -26,6 +26,25 @@ public class Main {
         System.out.printf("Значение переменной floatVar с типом \"float\" равно %s\n", floatVar);
         System.out.printf("Значение переменной doubleVar с типом \"double\" равно %s\n\n", doubleVar);
 
+        // Task 2
+
+        double floatNumber = 27.12f;
+        long longNumber = 987678965549L;
+        double doubleNumber = 2.786;
+        int integerNumber = 569;
+        int negativeInteger = -159;
+        int shortValue = 27897;
+        byte byteValue = 67;
+
+        System.out.println("Task 2\n");
+
+        System.out.println("floatNumber: " + floatNumber);
+        System.out.println("longNumber: " + longNumber);
+        System.out.println("doubleNumber: " + doubleNumber);
+        System.out.println("integerNumber: " + integerNumber);
+        System.out.println("negativeInteger: " + negativeInteger);
+        System.out.println("shortValue: " + shortValue);
+        System.out.println("byteValue: " + byteValue);
 
     }
 }
