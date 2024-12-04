@@ -113,5 +113,33 @@ public class Main {
                 blownPaint
         );
 
+        System.out.println("\nTask 6\n");
+
+        int bananaGr = 80;
+        int milkGr = 105;
+        int iceCreamGr = 100;
+        int egg = 70;
+
+        int breakfastWeightGr = (bananaGr * 5) + (milkGr * 10) + (iceCreamGr * 2) + (iceCreamGr*2) + (egg * 4);
+        float breakfastWeightKg = (float) breakfastWeightGr / 1000;
+
+        System.out.printf("""
+                        Вес ингредиентов (поштучно):
+                        Банан: %s гр.
+                        Молоко (100 мл): %s гр.
+                        Мороженное: %s гр.
+                        Яйцо сырое: %s гр.
+                        
+                        Общий вес завтрака согласно рецепту - %s Грамм (%s Кг)
+                        В составе которого:
+                            - Бананы  5 штук (1 банан — 80 грамм)
+                            - Молоко 200 мл (100 мл = 105 грамм)
+                            - Мороженое-пломбир 2 брикета по 100 грамм
+                            - Яйца сырые – 4 яйца
+                        """,
+                bananaGr, milkGr, iceCreamGr, egg,
+                breakfastWeightGr, breakfastWeightKg
+        );
+
     }
 }
