@@ -46,5 +46,29 @@ public class Main {
         System.out.println("shortValue: " + shortValue);
         System.out.println("byteValue: " + byteValue);
 
+        System.out.println("\nTask 3\n");
+
+        byte studentsLudmila = 23;
+        byte studentsAnna = 27;
+        byte studentsEkaterina = 30;
+
+        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
+        int sheetsPerStudent = 480 / totalStudents;
+
+        System.out.printf("""
+                *Количество учеников*
+                
+                Людмила Павловна: %s уч.
+                Анна Сергеевна: %s уч.
+                Екатерина Андреевна: %s уч.
+                
+                Общее количество учеников: %s
+                На каждого ученика рассчитано %s листов бумаги
+                
+                """, studentsLudmila, studentsAnna, studentsEkaterina, totalStudents, sheetsPerStudent);
+
+
+
+
     }
 }
