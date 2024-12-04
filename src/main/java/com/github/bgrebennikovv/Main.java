@@ -67,8 +67,36 @@ public class Main {
                 
                 """, studentsLudmila, studentsAnna, studentsEkaterina, totalStudents, sheetsPerStudent);
 
+        System.out.println("Task 4\n");
+
+        byte capacityPer2Min = 16;
+        byte capacityPerMin = (byte) (capacityPer2Min / 2);
+
+        short productionCapacityPer20Min = (short) (capacityPerMin * 20);
+        short productionCapacityPerDay = (short) (capacityPerMin * 1440);
+        int productionCapacityPer3Days = productionCapacityPerDay * 3;
+        int productionCapacityPerMonth = productionCapacityPerDay * 30;
 
 
+        System.out.printf("""
+                        
+                        *Для удобства расчетов найдем также количество за 1 минуту производства*
+                        За 1 минуту машина производит  %s штук бутылок.
+                        
+                        За 2 минуты машина произвела %s штук бутылок.
+                        За 20 минут машина произвела %s штук бутылок.
+                        За сутки машина произвела %s штук бутылок.
+                        За 3 дня машина произвела %s штук бутылок.
+                        За 1 месяц машина произвела %s штук бутылок.
+                        
+                        """,
+                capacityPerMin,
+                capacityPer2Min,
+                productionCapacityPer20Min,
+                productionCapacityPerDay,
+                productionCapacityPer3Days,
+                productionCapacityPerMonth
+        );
 
     }
 }
