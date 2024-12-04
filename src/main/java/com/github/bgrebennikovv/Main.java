@@ -166,6 +166,36 @@ public class Main {
                 averageDays
         );
 
+        System.out.println("\nTask 8\n");
+
+        // Используем double т.к. при работе с финансами необходим более точный тип данных.
+        double mashaSalary = 67760.00;
+        double denisSalary = 83690.00;
+        double kristinaSalary = 76230.00;
+
+        double mashaSalaryIndexed = mashaSalary * 1.1;
+        double denisSalaryIndexed = denisSalary * 1.1;
+        double kristinaSalaryIndexed = kristinaSalary * 1.1;
+
+        System.out.printf("""
+                        Зарплаты сотрудников до индексации:
+                        Маша %.2f Рублей/мес. Годовой доход: %.2f Рублей.
+                        Денис %.2f Рублей/мес. Годовой доход: %.2f Рублей.
+                        Кристина %.2f Рублей/мес. Годовой доход: %.2f Рублей.
+                        
+                        Зарплаты сотрудников до индексации:
+                        Маша теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.
+                        Денис теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.
+                        Кристина теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.
+                        """,
+                mashaSalary, mashaSalary * 12,
+                denisSalary, denisSalary * 12,
+                kristinaSalary, kristinaSalary * 12,
+
+                mashaSalaryIndexed, (mashaSalaryIndexed - mashaSalary) * 12,
+                denisSalaryIndexed, (denisSalaryIndexed - denisSalary) * 12,
+                kristinaSalaryIndexed, (kristinaSalaryIndexed - kristinaSalary) * 12
+        );
 
 
     }
