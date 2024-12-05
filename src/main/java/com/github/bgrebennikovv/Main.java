@@ -28,7 +28,7 @@ public class Main {
 
         // Task 2
 
-        double floatNumber = 27.12f;
+        float floatNumber = 27.12f;
         long longNumber = 987678965549L;
         double doubleNumber = 2.786;
         int integerNumber = 569;
